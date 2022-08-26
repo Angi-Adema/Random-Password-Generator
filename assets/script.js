@@ -5,11 +5,24 @@ var numbers = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
 var symbols = ["!", "@", "#", "$", "%", "^", "&", "(", ")", ",", ".", "/", ":", ";", "<", ">", "?", "[", "]", "`", "{", "}", "|", "~", "*", "_", "-", "+", "="];
 
 
+
+
 // TARGET THE ELEMENTS FROM THE DOM
 var generateBtn = document.querySelector("#generate");
 
-function generatePassword(){
+function generatePassword() {
   // When function runs need to ask the user the length of the password (8-128 characters) - prompt window - local variable of its own.
+  function passLength(inputtxt, minlength, maxlength) {
+    var minLength = 8;
+    var maxLength = 128;
+    var userInput = inputtxt.value;
+    if(userInput.length >= minlength && userInput.length <= maxlength); {
+      return true;
+    } else {
+      window.alert("Please input between " + minLength + " and " + maxLength + " characters.");
+        return false;
+    }
+  }
   // Add conditional to be sure password is within parameters.
   // Confirm window for the user to select type of letters, numbers and/or special characters - local variable of its own (5 total local variables).
   // Add conditional so the user selects at least one password parameter above.
