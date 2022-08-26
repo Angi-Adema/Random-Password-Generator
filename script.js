@@ -19,5 +19,5 @@ generateBtn.addEventListener("click", writePassword);
 
 var alpha = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
 var numbers = "0123456789";
-var symbols = "!@#$%^&*_-+=";
+var symbols = "!\"@#$%^&'(),./:;<>?[]`{}|~*_-+=";
 
