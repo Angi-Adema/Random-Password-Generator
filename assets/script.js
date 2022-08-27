@@ -12,6 +12,8 @@ var generateBtn = document.querySelector("#generate");
 
 function generatePassword() {
   // When function runs need to ask the user the length of the password (8-128 characters) - prompt window - local variable of its own.
+  // Add conditional to be sure password is within parameters.
+
   function passLength(inputtxt, minlength, maxlength) {
     var minLength = 8;
     var maxLength = 128;
@@ -23,8 +25,10 @@ function generatePassword() {
         return false;
     }
   }
-  // Add conditional to be sure password is within parameters.
+  
   // Confirm window for the user to select type of letters, numbers and/or special characters - local variable of its own (5 total local variables).
+
+  var userChoice = window.confirm();
   // Add conditional so the user selects at least one password parameter above.
   // Add a conditional to concatenate the arrays or not based on what the user selects for their password characters. (if/else statement - this one will loop based on the user's length - call the function with the number chosen by user in a new array with empty brackets - include the math random code line in this for loop)
 
