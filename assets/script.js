@@ -37,7 +37,7 @@ function generatePassword() {
   // Add conditional so the user selects at least one password parameter above.
 
   if (!uppercase && !lowercase && !number && !specialCharacter) {
-    alert('Please select at least one option!');
+    alert("Please select at least one option!");
     return null;
   }
 
@@ -60,7 +60,7 @@ function generatePassword() {
 
   // (if/else statement - this one will loop based on the user's length - call the function with the number chosen by user in a new array with empty brackets - include the math random code line in this for loop)
   for (let index = 0; index < passwordLength; index++) {
-    var randomCharacter =random(selectCharacters);
+    var randomCharacter = random(selectCharacters);
 
     finalPassword.push(randomCharacter)
   }
